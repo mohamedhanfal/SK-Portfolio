@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Prototype</title>
+
+    <link rel="stylesheet" href="./theme.css" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+
+  <body>
+    <!-- Scroll progress -->
+    <div class="scroll-progress" aria-hidden="true">
+      <div class="scroll-progress__bar" id="scrollBar" style="width: 0%"></div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+      <div class="container navbar__inner">
+        <a class="brand" href="#top" aria-label="Home">
+          <span class="brand__mark">MH</span>
+        </a>
+
+        <nav class="navlinks" aria-label="Primary">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button class="btn btn--ghost" id="themeToggle" type="button">
+            Toggle theme
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <!-- Hero -->
+      <section class="hero">
+        <div class="hero__bg"></div>
+        <div class="hero__grid"></div>
+
+        <div class="container hero__content">
+          <div class="pill">
+            <span class="pill__dot"></span>
+            Available for opportunities
+          </div>
+
+          <h1 class="hero__title">Mohamed Hanfal</h1>
+
+          <div class="hero__tags">
+            <span class="tag tag--blue">Full-Stack Developer</span>
+            <span class="tag tag--purple">A.I. Enthusiast</span>
+            <span class="tag tag--red">Ethical Hacker</span>
+          </div>
+
+          <p class="hero__subtitle">
+            Motivated Full-Stack Developer, AI enthusiast, and Ethical Hacker
+            with strong foundational skills in modern web development,
+            artificial intelligence, and cybersecurity.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#projects">View My Work</a>
+            <a class="btn btn--outline" href="#contact">Get In Touch</a>
+          </div>
+
+          <a class="hero__scroll" href="#about" aria-label="Scroll down">↓</a>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="section section--darkish">
+        <div class="container">
+          <h2 class="section__title">About Me</h2>
+          <p class="section__lead">
+            Motivated Full-Stack Developer, AI enthusiast, and Ethical Hacker
+            eager to contribute technical expertise and creativity while
+            continuing to learn and grow.
+          </p>
+
+          <div class="cards">
+            <article class="card card--blue">
+              <h3>Full Stack Development</h3>
+              <p>
+                Expertise in building scalable web applications with React,
+                Next.js, Vue.js, Node.js, and Express. Proficient in both SQL
+                and NoSQL databases.
+              </p>
+            </article>
+
+            <article class="card card--purple">
+              <h3>AI &amp; Data Science</h3>
+              <p>
+                Experience with machine learning frameworks including
+                TensorFlow, PyTorch, and OpenCV. Skilled in building AI-powered
+                solutions and chatbots.
+              </p>
+            </article>
+
+            <article class="card card--red">
+              <h3>Ethical Hacking &amp; Security</h3>
+              <p>
+                Experienced in penetration testing, vulnerability assessment,
+                and security audits. Skilled with Kali Linux, Metasploit, Burp
+                Suite, and Wireshark.
+              </p>
+            </article>
+
+            <article class="card card--green">
+              <h3>Continuous Learning</h3>
+              <p>
+                Currently pursuing BSc in Computer Science and Technology.
+                Certified in Meta Front-End Development and IBM Full Stack
+                Development.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section section--skills">
+        <div class="section__orb section__orb--blue"></div>
+        <div class="section__orb section__orb--purple"></div>
+
+        <div class="container">
+          <h2 class="section__title section__title--center">
+            Technical Skills
+          </h2>
+          <p class="section__lead section__lead--center">
+            A comprehensive toolkit built through hands-on learning and
+            real-world projects.
+          </p>
+
+          <div class="skill-groups">
+            <section class="skill-group">
+              <h3 class="skill-group__title">Programming Languages</h3>
+              <div class="badges">
+                <span class="badge">Python</span>
+                <span class="badge">JavaScript</span>
+                <span class="badge">TypeScript</span>
+                <span class="badge">Java</span>
+                <span class="badge">PHP</span>
+                <span class="badge">SQL</span>
+                <span class="badge">Bash</span>
+              </div>
+            </section>
+
+            <section class="skill-group">
+              <h3 class="skill-group__title">Frontend</h3>
+              <div class="badges">
+                <span class="badge">React.js</span>
+                <span class="badge">Next.js</span>
+                <span class="badge">Vue.js</span>
+                <span class="badge">HTML5</span>
+                <span class="badge">CSS3</span>
+                <span class="badge">Tailwind CSS</span>
+                <span class="badge">Bootstrap</span>
+              </div>
+            </section>
+
+            <section class="skill-group">
+              <h3 class="skill-group__title">Backend &amp; Databases</h3>
+              <div class="badges">
+                <span class="badge">Node.js</span>
+                <span class="badge">Express.js</span>
+                <span class="badge">REST APIs</span>
+                <span class="badge">GraphQL</span>
+                <span class="badge">MongoDB</span>
+                <span class="badge">MySQL</span>
+                <span class="badge">Oracle Cloud</span>
+                <span class="badge">Apache</span>
+              </div>
+            </section>
+
+            <section class="skill-group">
+              <h3 class="skill-group__title">AI &amp; Data Science</h3>
+              <div class="badges">
+                <span class="badge">TensorFlow</span>
+                <span class="badge">PyTorch</span>
+                <span class="badge">OpenCV</span>
+                <span class="badge">Scikit-learn</span>
+                <span class="badge">Pandas</span>
+                <span class="badge">NumPy</span>
+                <span class="badge">Kaggle</span>
+              </div>
+            </section>
+
+            <section class="skill-group">
+              <h3 class="skill-group__title">
+                Cybersecurity &amp; Ethical Hacking
+              </h3>
+              <div class="badges">
+                <span class="badge">Kali Linux</span>
+                <span class="badge">Metasploit</span>
+                <span class="badge">Burp Suite</span>
+                <span class="badge">Wireshark</span>
+                <span class="badge">Nmap</span>
+                <span class="badge">Penetration Testing</span>
+                <span class="badge">Vulnerability Assessment</span>
+                <span class="badge">OWASP</span>
+                <span class="badge">Network Security</span>
+                <span class="badge">Web App Security</span>
+              </div>
+            </section>
+
+            <section class="skill-group">
+              <h3 class="skill-group__title">Tools &amp; Platforms</h3>
+              <div class="badges">
+                <span class="badge">Git</span>
+                <span class="badge">GitHub</span>
+                <span class="badge">VS Code</span>
+                <span class="badge">Postman</span>
+                <span class="badge">Figma</span>
+                <span class="badge">Docker</span>
+                <span class="badge">AWS</span>
+                <span class="badge">Netlify</span>
+                <span class="badge">Heroku</span>
+                <span class="badge">Firebase</span>
+              </div>
+            </section>
+
+            <section class="skill-group">
+              <h3 class="skill-group__title">Testing &amp; Other</h3>
+              <div class="badges">
+                <span class="badge">Jest</span>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section section--darkish section--projects">
+        <div class="container">
+          <h2 class="section__title section__title--center">
+            Featured Projects
+          </h2>
+          <p class="section__lead section__lead--center">
+            Real-world projects showcasing full-stack development and AI
+            integration expertise.
+          </p>
+
+          <div class="project-list">
+            <article class="project project--blue">
+              <div class="project__top">
+                <div class="project__icon">🎓</div>
+
+                <div class="project__head">
+                  <div class="project__titleRow">
+                    <h3 class="project__title">
+                      UniCracker - University Admission Guide
+                    </h3>
+                    <span class="project__time">2025 - Present</span>
+                  </div>
+                  <p class="project__role">Founder &amp; Lead Developer</p>
+                </div>
+              </div>
+
+              <p class="project__desc">
+                Created and launched a full-stack platform to help students
+                explore university admissions. Integrated Z-score data, course
+                filtering, and step-by-step application guidance.
+              </p>
+
+              <ul class="ticks">
+                <li>
+                  Built UniBot (AI chatbot) to assist users with admission
+                  queries and navigation.
+                </li>
+                <li>Implemented NLP for conversational interactions.</li>
+                <li>
+                  Added interactive command menus and rich embed responses.
+                </li>
+                <li>Led UI/UX, data handling, and deployment strategy.</li>
+                <li>
+                  In beta with plans for multilingual support and PDF export.
+                </li>
+              </ul>
+
+              <div class="badges badges--tight">
+                <span class="badge">Python</span>
+                <span class="badge">OpenAI API</span>
+                <span class="badge">DALL·E</span>
+                <span class="badge">Discord.py</span>
+              </div>
+
+              <div class="project__actions">
+                <a
+                  class="btn btn--outline btn--sm"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Code
+                </a>
+                <a
+                  class="btn btn--primary btn--sm"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Demo
+                </a>
+              </div>
+            </article>
+
+            <article class="project project--green">
+              <div class="project__top">
+                <div class="project__icon">🛒</div>
+
+                <div class="project__head">
+                  <div class="project__titleRow">
+                    <h3 class="project__title">E-commerce Platform</h3>
+                    <span class="project__time">2024</span>
+                  </div>
+                  <p class="project__role">Full-Stack Developer</p>
+                </div>
+              </div>
+
+              <p class="project__desc">
+                Built an e-commerce app with search, filtering, and secure
+                authentication.
+              </p>
+
+              <ul class="ticks">
+                <li>Integrated product search and category filtering.</li>
+                <li>Built secure authentication and authorization system.</li>
+                <li>
+                  Created admin dashboard for product and order management.
+                </li>
+              </ul>
+
+              <div class="badges badges--tight">
+                <span class="badge">React</span>
+                <span class="badge">Node.js</span>
+                <span class="badge">MongoDB</span>
+              </div>
+
+              <div class="project__actions">
+                <a
+                  class="btn btn--outline btn--sm"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Code
+                </a>
+                <a
+                  class="btn btn--primary btn--sm"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Live Demo
+                </a>
+              </div>
+            </article>
+
+            <article class="project project--purple">
+              <div class="project__top">
+                <div class="project__icon">🤖</div>
+
+                <div class="project__head">
+                  <div class="project__titleRow">
+                    <h3 class="project__title">Discord Bot Suite</h3>
+                    <span class="project__time">2023</span>
+                  </div>
+                  <p class="project__role">Developer</p>
+                </div>
+              </div>
+
+              <p class="project__desc">
+                Built moderation and automation features for Discord
+                communities.
+              </p>
+
+              <ul class="ticks">
+                <li>
+                  Built basic server moderation tools and automation features.
+                </li>
+                <li>
+                  Designed commands, permissions, and event-driven features.
+                </li>
+              </ul>
+
+              <div class="badges badges--tight">
+                <span class="badge">Python</span>
+                <span class="badge">Discord.py</span>
+              </div>
+
+              <div class="project__actions">
+                <a
+                  class="btn btn--outline btn--sm"
+                  href="#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Code
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section section--education">
+        <div class="section__orb section__orb--green"></div>
+
+        <div class="container">
+          <h2 class="section__title section__title--center">
+            Education &amp; Certifications
+          </h2>
+          <p class="section__lead section__lead--center">
+            Academic background and professional certifications demonstrating
+            commitment to continuous learning.
+          </p>
+
+          <div class="two-col">
+            <article class="panel">
+              <div class="panel__head">
+                <div class="panel__icon panel__icon--blue">🎓</div>
+                <h3 class="panel__title">Education</h3>
+              </div>
+
+              <div class="timeline">
+                <div class="timeline__item">
+                  <div class="timeline__line timeline__line--blue"></div>
+                  <div class="timeline__body">
+                    <h4>Sabaragamuwa University of Sri Lanka</h4>
+                    <p class="muted blue">
+                      BSc (Hons) in Computer Science and Technology
+                    </p>
+                    <div class="timeline__meta">
+                      <span class="badge badge--green">First Year</span>
+                      <span class="meta">2025 - 2029</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+
+            <article class="panel">
+              <div class="panel__head">
+                <div class="panel__icon panel__icon--purple">🏅</div>
+                <h3 class="panel__title">Certifications</h3>
+              </div>
+
+              <div class="timeline">
+                <div class="timeline__item">
+                  <div class="timeline__line timeline__line--purple"></div>
+                  <div class="timeline__body">
+                    <h4>Meta Front-End Developer</h4>
+                    <p class="muted">Coursera - Meta</p>
+                    <span class="badge badge--green">Completed</span>
+                  </div>
+                </div>
+
+                <div class="timeline__item">
+                  <div class="timeline__line timeline__line--purple"></div>
+                  <div class="timeline__body">
+                    <h4>IBM Full Stack Developer</h4>
+                    <p class="muted">Coursera - IBM</p>
+                    <span class="badge badge--green">Completed</span>
+                  </div>
+                </div>
+
+                <div class="timeline__item">
+                  <div class="timeline__line timeline__line--purple"></div>
+                  <div class="timeline__body">
+                    <h4>Python Programming Essentials</h4>
+                    <p class="muted">Cisco Networking Academy</p>
+                    <span class="badge badge--yellow">In Progress</span>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section section--darkish section--contact">
+        <div class="section__orb section__orb--gradient"></div>
+
+        <div class="container container--narrow">
+          <div class="contact-head">
+            <div class="pill">
+              <span class="pill__dot"></span>
+              Open to opportunities
+            </div>
+
+            <h2 class="section__title section__title--center">Let’s Connect</h2>
+            <p class="section__lead section__lead--center">
+              Feel free to reach out for opportunities or collaborations.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <a class="contact-card" href="mailto:you@example.com">
+              <div class="contact-card__icon">✉️</div>
+              <div>
+                <h3>Email</h3>
+                <p class="muted">you@example.com</p>
+              </div>
+            </a>
+
+            <a
+              class="contact-card"
+              href="https://github.com/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="contact-card__icon">🐙</div>
+              <div>
+                <h3>GitHub</h3>
+                <p class="muted">github.com/yourusername</p>
+              </div>
+            </a>
+
+            <a
+              class="contact-card"
+              href="https://linkedin.com/in/yourprofile"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div class="contact-card__icon">🔗</div>
+              <div>
+                <h3>LinkedIn</h3>
+                <p class="muted">linkedin.com/in/yourprofile</p>
+              </div>
+            </a>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-row">
+              <label>
+                Name
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  required
+                />
+              </label>
+              <label>
+                Email
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="you@example.com"
+                  required
+                />
+              </label>
+            </div>
+
+            <label>
+              Message
+              <textarea
+                name="message"
+                rows="5"
+                placeholder="Write your message..."
+                required
+              ></textarea>
+            </label>
+
+            <button class="btn btn--primary" type="submit">Send message</button>
+            <p class="form-note" id="formNote" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
