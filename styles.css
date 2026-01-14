@@ -779,6 +779,7 @@
   color: color-mix(in oklch, var(--foreground) 60%, transparent);
   font-size: 14px;
   line-height: 1.5;
+  padding-bottom: 4px;
 }
 .blue {
   color: #93c5fd;
