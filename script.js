@@ -1,21 +1,3 @@
-// Theme toggle + persistence
-const root = document.documentElement;
-const toggleBtn = document.getElementById("themeToggle");
-
-function applyTheme(theme) {
-  if (theme === "dark") root.classList.add("dark");
-  else root.classList.remove("dark");
-}
-
-const saved = localStorage.getItem("theme");
-if (saved === "dark" || saved === "light") applyTheme(saved);
-
-toggleBtn?.addEventListener("click", () => {
-  const next = root.classList.contains("dark") ? "light" : "dark";
-  applyTheme(next);
-  localStorage.setItem("theme", next);
-});
-
 // Scroll progress + navbar blur on scroll
 const bar = document.getElementById("scrollBar");
 const navbar = document.getElementById("navbar");
@@ -33,7 +15,7 @@ function onScroll() {
 window.addEventListener("scroll", onScroll, { passive: true });
 onScroll();
 
-// Fake "send message" for prototype (no backend)
+// Fake form submission
 const form = document.getElementById("contactForm");
 const note = document.getElementById("formNote");
 

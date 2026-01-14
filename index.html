@@ -4,9 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mohamed Hanfal</title>
-
-    <link rel="stylesheet" href="./css/theme.css" />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/themes.css" />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
 
   <body>
@@ -164,7 +163,7 @@
       <!-- About -->
       <section id="about" class="section section--darkish">
         <div class="container">
-          <h2 class="section__title section__title--center">About Me</h2>
+          <h2 class="section__title section__title --center">About Me</h2>
           <p class="section__lead section__lead--center">
             Motivated Full-Stack Developer, AI enthusiast, and Ethical Hacker
             eager to contribute technical expertise and creativity while
@@ -426,9 +425,29 @@
           </p>
 
           <div class="project-list">
+            <!-- Project 1 -->
             <article class="project project--blue">
               <div class="project__top">
-                <div class="project__icon">🎓</div>
+                <div class="project__icon" aria-hidden="true">
+                  <!-- lucide-graduation-cap (32x32) -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+                    ></path>
+                    <path d="M22 10v6"></path>
+                    <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                  </svg>
+                </div>
 
                 <div class="project__head">
                   <div class="project__titleRow">
@@ -442,23 +461,31 @@
               </div>
 
               <p class="project__desc">
-                Created and launched a full-stack platform to help students
-                explore university admissions. Integrated Z-score data, course
-                filtering, and step-by-step application guidance.
+                Created and launched a full-stack platform to help Sri Lankan
+                students explore university admissions after ALs. Integrated LGC
+                Z-score data, course filtering, and step-by-step UOC application
+                guidance.
               </p>
 
               <ul class="ticks">
                 <li>
-                  Built UniBot (AI chatbot) to assist users with admission
-                  queries and navigation.
+                  Built UniBot, a custom AI chatbot to assist users with
+                  admission queries and platform navigation.
                 </li>
-                <li>Implemented NLP for conversational interactions.</li>
+                <li>
+                  Implemented natural language processing for conversational
+                  interactions.
+                </li>
                 <li>
                   Added interactive command menus and rich embed responses.
                 </li>
-                <li>Led UI/UX, data handling, and deployment strategy.</li>
                 <li>
-                  In beta with plans for multilingual support and PDF export.
+                  Led development, UI/UX, data handling, and deployment
+                  strategy.
+                </li>
+                <li>
+                  Currently in beta with plans for freemium model, multilingual
+                  support, and PDF export.
                 </li>
               </ul>
 
@@ -476,39 +503,102 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <!-- lucide-github (16x16) -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    style="margin-right: 8px"
+                  >
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                    ></path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg>
                   View Code
                 </a>
+
                 <a
                   class="btn btn--primary btn--sm"
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <!-- lucide-external-link (16x16) -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    style="margin-right: 8px"
+                  >
+                    <path d="M15 3h6v6"></path>
+                    <path d="M10 14 21 3"></path>
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                  </svg>
                   Live Demo
                 </a>
               </div>
             </article>
 
+            <!-- Project 2 -->
             <article class="project project--green">
               <div class="project__top">
-                <div class="project__icon">🛒</div>
+                <div class="project__icon" aria-hidden="true">
+                  <!-- lucide-shopping-cart (32x32) -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <circle cx="8" cy="21" r="1"></circle>
+                    <circle cx="19" cy="21" r="1"></circle>
+                    <path
+                      d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                    ></path>
+                  </svg>
+                </div>
 
                 <div class="project__head">
                   <div class="project__titleRow">
-                    <h3 class="project__title">E-commerce Platform</h3>
-                    <span class="project__time">2024</span>
+                    <h3 class="project__title">SKmart - E-commerce Platform</h3>
+                    <span class="project__time">2025</span>
                   </div>
                   <p class="project__role">Full-Stack Developer</p>
                 </div>
               </div>
 
               <p class="project__desc">
-                Built an e-commerce app with search, filtering, and secure
-                authentication.
+                Designed and built a responsive online store with product
+                listing, cart, and user authentication. Implemented a secure
+                checkout flow with order history and an admin dashboard for
+                store operations.
               </p>
 
               <ul class="ticks">
-                <li>Integrated product search and category filtering.</li>
+                <li>
+                  Integrated product search and category filtering for enhanced
+                  user experience.
+                </li>
                 <li>Built secure authentication and authorization system.</li>
                 <li>
                   Created admin dashboard for product and order management.
@@ -518,6 +608,7 @@
               <div class="badges badges--tight">
                 <span class="badge">React</span>
                 <span class="badge">Node.js</span>
+                <span class="badge">Express.js</span>
                 <span class="badge">MongoDB</span>
               </div>
 
@@ -528,22 +619,81 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <!-- lucide-github (16x16) -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    style="margin-right: 8px"
+                  >
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                    ></path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg>
                   View Code
                 </a>
+
                 <a
                   class="btn btn--primary btn--sm"
                   href="#"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <!-- lucide-external-link (16x16) -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    style="margin-right: 8px"
+                  >
+                    <path d="M15 3h6v6"></path>
+                    <path d="M10 14 21 3"></path>
+                    <path
+                      d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"
+                    ></path>
+                  </svg>
                   Live Demo
                 </a>
               </div>
             </article>
 
+            <!-- Project 3 -->
             <article class="project project--purple">
               <div class="project__top">
-                <div class="project__icon">🤖</div>
+                <div class="project__icon" aria-hidden="true">
+                  <!-- lucide-bot (32x32) -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path d="M12 8V4H8"></path>
+                    <rect width="16" height="12" x="4" y="8" rx="2"></rect>
+                    <path d="M2 14h2"></path>
+                    <path d="M20 14h2"></path>
+                    <path d="M15 13v2"></path>
+                    <path d="M9 13v2"></path>
+                  </svg>
+                </div>
 
                 <div class="project__head">
                   <div class="project__titleRow">
@@ -556,7 +706,8 @@
 
               <p class="project__desc">
                 Built moderation and automation features for Discord
-                communities.
+                communities, focusing on reliability, clean commands, and
+                event-driven behavior to improve server management.
               </p>
 
               <ul class="ticks">
@@ -580,6 +731,24 @@
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  <!-- lucide-github (16x16) -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    style="margin-right: 8px"
+                  >
+                    <path
+                      d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                    ></path>
+                    <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                  </svg>
                   View Code
                 </a>
               </div>
@@ -604,7 +773,26 @@
           <div class="two-col">
             <article class="panel">
               <div class="panel__head">
-                <div class="panel__icon panel__icon--blue">🎓</div>
+                <div class="panel__icon panel__icon--blue" aria-hidden="true">
+                  <!-- lucide-graduation-cap (24x24) -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z"
+                    ></path>
+                    <path d="M22 10v6"></path>
+                    <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"></path>
+                  </svg>
+                </div>
                 <h3 class="panel__title">Education</h3>
               </div>
 
@@ -627,7 +815,25 @@
 
             <article class="panel">
               <div class="panel__head">
-                <div class="panel__icon panel__icon--purple">🏅</div>
+                <div class="panel__icon panel__icon--purple" aria-hidden="true">
+                  <!-- lucide-award (24x24) -->
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path
+                      d="m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526"
+                    ></path>
+                    <circle cx="12" cy="8" r="6"></circle>
+                  </svg>
+                </div>
                 <h3 class="panel__title">Certifications</h3>
               </div>
 
@@ -683,7 +889,26 @@
 
           <div class="contact-grid">
             <a class="contact-card" href="mailto:you@example.com">
-              <div class="contact-card__icon">✉️</div>
+              <div
+                class="contact-card__icon contact-card__icon--green"
+                aria-hidden="true"
+              >
+                <!-- lucide-mail -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                </svg>
+              </div>
               <div>
                 <h3>Email</h3>
                 <p class="muted">you@example.com</p>
@@ -696,7 +921,28 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div class="contact-card__icon">🐙</div>
+              <div
+                class="contact-card__icon contact-card__icon--blue"
+                aria-hidden="true"
+              >
+                <!-- lucide-github -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"
+                  ></path>
+                  <path d="M9 18c-4.51 2-5-2-7-2"></path>
+                </svg>
+              </div>
               <div>
                 <h3>GitHub</h3>
                 <p class="muted">github.com/yourusername</p>
@@ -709,7 +955,29 @@
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div class="contact-card__icon">🔗</div>
+              <div
+                class="contact-card__icon contact-card__icon--purple"
+                aria-hidden="true"
+              >
+                <!-- lucide-linkedin -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect width="4" height="12" x="2" y="9"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </div>
               <div>
                 <h3>LinkedIn</h3>
                 <p class="muted">linkedin.com/in/yourprofile</p>
@@ -755,6 +1023,17 @@
         </div>
       </section>
     </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="site-footer__row">
+          <p class="site-footer__copy">
+            © 2026 Mohamed Hanfal. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <script src="./script.js"></script>
   </body>
